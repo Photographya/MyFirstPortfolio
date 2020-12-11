@@ -3,3 +3,6 @@ Este archivo es mi primer portafolio
 Lo bajé por error. 
 
 Ahora no tengo idea de que hacer acá.
+
+Voy a agregar un texto adicional para comprobar como funciona git pull-request.
+Yo ya se que esto solo funciona en github.
