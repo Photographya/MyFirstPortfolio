@@ -9,6 +9,7 @@ font-family: 'Open Sans', sans-serif;
 html {
     min-width: 341px;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +27,7 @@ header {
 .logo {
     height: 140%;
     width: auto;
-    
+
 }
 
 .logo-tablet {
@@ -53,11 +54,11 @@ ol {
 }
 
 .presentacion {
-    height: 100vh;
+    height: 80vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
 }
 
@@ -95,9 +96,10 @@ ol {
 }
 
 .sobremi {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .sobremi-details h2 {
@@ -769,65 +771,90 @@ ol {
 /*Media Queries para Web Responsive*/
 
 @media screen and (max-width: 1024px) {
-    
+
     .container-header {
         display: block;
     }
-    
+
     .logo {
         display: none;
     }
-    
+
     .logo-tablet {
-         display: block;
+        display: block;
         margin: 0 auto;
         width: auto;
         height: 130%;
     }
-    
+
     .header-nav ol {
         display: flex;
         justify-content: center;
         height: auto;
     }
-    
-    
-    
+
     .presentacion {
-        border: 1px green solid;
+        /*        border: 1px green solid;*/
         height: auto;
         margin-top: 120px;
     }
-    
-    .presentacion-details, .presentacion-pic {
+
+    .presentacion-details,
+    .presentacion-pic {
         width: 50%;
     }
-    
+
     .presentacion-avatar {
         width: 100%;
     }
-    
-    .presentacion-details h3{
+
+    .presentacion-details h3 {
         font-size: 1em
     }
-    
-    .presentacion-details h1{
+
+    .presentacion-details h1 {
         font-size: 2.5em
     }
-    
-    .presentacion-details h2{
+
+    .presentacion-details h2 {
         font-size: 1em;
     }
-    
-    .presentacion .boton.hireme{
+
+    .presentacion .boton.hireme {
         font-size: 1em;
 
     }
     
+    .sobremi {
+        margin-top: 3.5em;
+        
+    }
     
+    .sobremi-img {
+        width: 40%;
+        text-align: center;
+    }
     
+    .sobremi-img img {
+        width: 70%;
+    }
     
+    .sobremi-details {
+        width: 60%;
+    }
     
+    .sobremi-details h2{
+        font-size: 2.5em;        
+    }
+    
+    .sobremi-details h3{
+        font-size: 1.4em;        
+    }
+    
+    .sobremi-details p{
+        font-size: 1em;
+        width: 95%;
+    }
     
     
     
@@ -839,7 +866,7 @@ ol {
         display: block;
 
     }
-    
+
     .logo {
         display: none;
     }
@@ -869,12 +896,49 @@ ol {
         margin: 4px 10px;
         color: black;
     }
+
+    .presentacion {
+        /*        border: 1px green solid;*/
+        height: auto;
+        margin-top: 145px;
+    }
+
+    .presentacion-details,
+    .presentacion-pic {
+        width: 50%;
+    }
+
+    .presentacion-avatar {
+        width: 100%;
+    }
+
+    .presentacion-details h3 {
+        font-size: 0.8em
+    }
+
+    .presentacion-details h1 {
+        font-size: 2.3em;
+        margin: 15px 0px;
+    }
+
+    .presentacion-details h2 {
+        font-size: 0.9em;
+    }
+
+    .presentacion .boton.hireme {
+        font-size: 0.9em;
+        padding: 10px;
+
+    }
+
+
 }
 
 @media screen and (max-width: 480px) {
     .header-nav ol {
         display: block;
     }
+
     .enlace {
         text-align: center;
         padding: 10px 20px;
@@ -884,10 +948,84 @@ ol {
         margin: 0;
         font-weight: 200;
     }
-    
+
     .enlacehome {
         border-top: solid 1px #838287;
     }
+
+    .presentacion {
+        /*        border: 1px green solid;*/
+        height: auto;
+        margin-top: 380px;
+        flex-direction: column-reverse;
     }
+    .presentacion-pic {
+        height: auto;
+        margin-bottom: 1em;
+        
+    }
+    .presentacion-avatar {
+        height: 80%;
+    }
+
+    .presentacion-details h3 {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .presentacion-details h1 {
+        font-size: 2.3em;
+        margin: 15px 0px;
+        text-align: center;
+    }
+
+    .presentacion-details h2 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .presentacion .boton.hireme {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+    
+    
+    
+    .sobremi {
+        margin-top: 0px;
+        height: 70vh;        
+    }
+    
+    .sobremi-details {
+        width: 100%;
+    }
+    
+    .sobremi-details h2, .sobremi-img {
+        display: none;
+    }
+    
+    .sobremi-details h3 {
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    .sobremi-details p {
+        text-align: center;
+        padding: 0px 20px;
+        width: 100%;
+    }
+    
+    .boton-ver-portafolio{        
+        text-align: center;    
+    }
+    
+    .sobremi-details button {
+        width: 200px;
+        height: 38px;
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
 
 @media screen and (max-width: 360px) {}
