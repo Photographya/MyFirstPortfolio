@@ -286,7 +286,9 @@ ol {
 }
 
 .avances {
-    height: 100vh;
+    height: auto;
+    margin: 10em 0;
+    
 }
 
 .avances h2 {
@@ -338,7 +340,8 @@ ol {
 }
 
 .servicios {
-    height: 100vh;
+    padding: 8em 0;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -900,9 +903,10 @@ ol {
     }
     
     .avances {
-        height: 60vh;
+        margin: 4em 0;
     }
     
+   
     .avances .avances-intro {
         margin-bottom: 1.5em;
         margin-right: 20px;
@@ -918,6 +922,15 @@ ol {
     
     .avance-unidad .avance-detail {
         margin-bottom: 1em;
+    }
+    
+    .servicios {
+        padding: 2em 0;
+    }
+    
+    .servicios .servicios-group {
+        width: 90%;
+        margin-top: 0;
     }
 }
 
@@ -1006,6 +1019,7 @@ ol {
     
     .avances {
         height: auto;
+        margin: 2em auto;
     }
     
     .avances-cajas {
@@ -1018,7 +1032,21 @@ ol {
     
     .boton-avance-leemas {
         text-align: center;
-    } 
+    }
+    
+    .servicios{
+        width: 100%
+    }
+    
+    .servicios .servicios-group {
+        display: block;
+    }
+    
+    .servicios-group .servicios-fila {
+        display: flex;
+    }
+    
+    
     
 }
 
@@ -1105,9 +1133,7 @@ ol {
     .presentacion .boton.hireme {
         font-size: 0.9em;
         padding: 10px;
-    }
-    
-    
+    }     
     
     .sobremi {
         margin-top: 0px;
@@ -1161,6 +1187,11 @@ ol {
         text-align: center;
     }
     
+    .avances {
+        height: auto;
+        margin: 1.5em auto;
+    }
+    
     .avances h2 {
         font-size: 2em;
         text-align: center;
@@ -1172,6 +1203,35 @@ ol {
         padding: 0px;
         margin: 1em .5em;
         text-align: center;
+    }
+    
+    .servicios {
+    }
+    
+    .servicios .servicios-group {
+        display: block;
+    }
+    
+    .servicios-group .servicios-fila {
+        display: block;
+    }
+    
+    .servicios-box{
+        display: block;
+        text-align: center;
+        margin: 1.5em 0;
+    }
+    
+    .servicios-box .servicios-icon {
+        width: 30px;
+    }
+    
+    .servicios .servicios-title {
+        font-size: 2.5em;
+    }
+    
+    .servicios .servicios-intro {
+        margin: 2em 1em;
     }
     
 }
@@ -1234,6 +1294,22 @@ ol {
     
     .avances-cajas .avance-unidad {
         margin: 1em 1em;
+    }
+    
+    .servicios-box .servicios-name {
+        font-size: 1em;
+    }
+    
+    .servicios-box .servicios-detail {
+        font-size: 0.8em;
+    }
+    
+    .servicios .servicios-title {
+        font-size: 2.3em;
+    }
+    
+    .servicios .servicios-intro {
+        margin: 1em 0.5em;
     }
     
 }
