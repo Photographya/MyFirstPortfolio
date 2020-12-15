@@ -969,11 +969,28 @@ ol {
         padding: 10px;
 
     }
+    
+    .skills {
+        margin-top: 50px;
+    }
+    
+    .tech-group {
+        width: 100%;
+    }
+    
+    .tech-group .tech-group-fila {
+        padding: 0em 1em;
+    }
+    
+    
+    
+    
 
 
 }
 
 @media screen and (max-width: 480px) {
+    
     .icon-menu {
         width: 40px;
         height: 40px;
@@ -1023,20 +1040,21 @@ ol {
     .presentacion {
         /*        border: 1px green solid;*/
         height: auto;
-        margin-top: 380px;
         flex-direction: column-reverse;
+        margin-top: 4em;
     }
     .presentacion-pic {
         height: auto;
+        width: auto;
         margin-bottom: 1em;
         
     }
     .presentacion-avatar {
-        height: 80%;
+        height: 10em ;
     }
 
     .presentacion-details h3 {
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: center;
     }
 
@@ -1093,9 +1111,31 @@ ol {
         padding: 10px;
         font-size: 0.9em;
     }
+    
+    .skills {
+        padding-top: 1em;
+        height: auto;
+        padding-bottom: 1em;
+        margin-top: 0;
+    }
+    
+    .skills-title h2 {
+        font-size: 2em
+    }
+    
+    .skills-title p {
+        
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 360px) {
+    
+    .skills {
+        height: auto;
+        padding-bottom: 1em;
+        margin-top: 1em;
+    }
     
     .links{
         display: flex;
@@ -1114,5 +1154,28 @@ ol {
     
     .is-active {
         left: 0;
+    }
+    
+    .tech-group .tech-group-fila {
+        width: 100%;
+        margin-top: .5em;
+    }
+    
+    .tech-group {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    
+    .tech-group-fila {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    
+    .tech-group .tech-group-fila2{
+        margin-top: -.1em;
     }
 }
