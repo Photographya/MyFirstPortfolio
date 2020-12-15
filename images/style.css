@@ -6,8 +6,43 @@ font-family: 'Cabin', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
 
+/*Este es el código de la fuente del icono menu*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?smbfqg');
+  src:  url('../fonts/icomoon.eot?smbfqg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?smbfqg') format('truetype'),
+    url('../fonts/icomoon.woff?smbfqg') format('woff'),
+    url('../fonts/icomoon.svg?smbfqg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+/*Aqui termina la fuente de iconos no tocar el código de arriba*/
+
 html {
-    min-width: 341px;
+    min-width: 320px;
 }
 
 * {
@@ -22,6 +57,10 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
+}
+
+.icon-menu {
+    display: none;
 }
 
 .logo {
@@ -935,22 +974,50 @@ ol {
 }
 
 @media screen and (max-width: 480px) {
-    .header-nav ol {
+    .icon-menu {
+        width: 40px;
+        height: 40px;
+        border-radius: 20%;
+        position: fixed;
+        top: 20px;
+        z-index: 5;
+        color: white;
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        background-color: rgba(131, 130, 135, 0.9);
         display: block;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+/*        border: red solid 1px;*/
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -100vw;
+        right: 0;
+        background-color: #63BCE5;
+        transition: all linear 1.40;   
+    }
+    
+    .is-active {
+        left: 0;
     }
 
     .enlace {
+        width: 100%;
         text-align: center;
         padding: 10px 20px;
-        border-bottom: solid 1px #838287;
-        border-left: solid 1px #838287;
-        border-right: solid 1px #838287;
+        color: white;
+        background: transparent;
         margin: 0;
         font-weight: 200;
-    }
-
-    .enlacehome {
-        border-top: solid 1px #838287;
+        font-size: 2em;
+        text-transform: uppercase;
+        margin-bottom: 15px;
     }
 
     .presentacion {
@@ -1028,4 +1095,24 @@ ol {
     }
 }
 
-@media screen and (max-width: 360px) {}
+@media screen and (max-width: 360px) {
+    
+    .links{
+        display: flex;
+        flex-direction: column;
+/*        border: red solid 1px;*/
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -100vw;
+        right: 0;
+        background-color: #63BCE5;
+        transition: all linear 1.40;   
+    }
+    
+    .is-active {
+        left: 0;
+    }
+}

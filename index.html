@@ -12,8 +12,10 @@
         <div class="container container-header">
            <img class="logo" src="images/logo%20-%20nuevo%20estilo.png" alt="logo" width="100"/>
            <img class="logo-tablet" src="images/logocentrado.png" alt="logoparatablets" width="100"/>
+           <i class="icon-menu" id="burger-menu"></i>
             <nav class="header-nav">
-                <ol class="links">
+             <!--Este menú es desplegable.-->
+              <ol class="links">
                     <li class="enlace enlacehome"><a>Home</a></li>
                     <li class="enlace"><a>Sobre mí</a></li>
                     <li class="enlace"><a>Habilidades</a></li>
@@ -408,7 +410,21 @@
         <div class="copy"> (c) Copyright 2020 Azul Studio de Diseño | Todos los derechos reservados </div>
         </div>
     </footer>-->
+    <script>
+    const menu = document.querySelector('.links');
+    const burgerButton = document.querySelector('#burger-menu');
     
+        burgerButton.addEventListener('click', hideShow)
+    
+        function hideShow (){
+            if(menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+            }
+            else {
+               menu.classList.add('is-active'); 
+            }
+            }
+    </script>
 </body></html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="images/style.css">
