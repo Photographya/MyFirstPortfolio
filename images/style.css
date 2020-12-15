@@ -534,13 +534,13 @@ ol {
                                                                     /*Fin estilos del portafolio*/
 
 .referencias {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 12em;
+    margin-bottom: 4em;
 }
 
 .referencias-title .referencias-title-h2 {
@@ -743,16 +743,37 @@ ol {
 }
 
 .contacto {
-    margin: 50px 0;
-    height: 50vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    border: 1px solid green;
+}
+
+.contacto-image-contenedor {
+    width: 40%;
+    text-align: center;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+
+.contacto-img {
+    max-width: 100%;
+}
+
+
+
+.contacto {
+    margin: 3em 0;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .formulario {
-    margin-left: 60px;
-    width: 600px;
+    
+    width: 50%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 .formulario input {
@@ -761,11 +782,10 @@ ol {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     padding: 10px 10px;
-    margin: 6px 10px;
+    margin: auto;
 }
 
 .form-nombreyapellido .form-box {
-    display: flex;
     width: 100%;
 }
 
@@ -811,6 +831,11 @@ ol {
     margin: 0px 8px;
 }
 
+.social-group .social {
+    text-align: center;
+    line-height: 2em;
+}
+
 .container
 
 /*- Aplica los margenes a todas la secciones de la web*/
@@ -823,7 +848,7 @@ ol {
     height: inherit;
 }
 
-/*Media Queries para Web Responsive*/
+                                                                /*Media Queries para Web Responsive*/
 
 @media screen and (max-width: 1024px) {
 
@@ -945,6 +970,11 @@ ol {
         width: 90%;
         margin-top: 0;
     }
+    
+    .opinion-group {
+        display: block;
+        margin: 0;
+    }
 }
 
 
@@ -1059,8 +1089,15 @@ ol {
         display: flex;
     }
     
+    .opinion-group {
+        width: 95%;
+    }
     
-    
+    .opinion-box {
+        padding: 2em 1em;
+        border: white solid 1px;
+        
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1217,10 +1254,7 @@ ol {
         margin: 1em .5em;
         text-align: center;
     }
-    
-    .servicios {
-    }
-    
+      
     .servicios .servicios-group {
         display: block;
     }
@@ -1293,6 +1327,42 @@ ol {
         color: white;
         background-color: rgba(131, 130, 135, 0.45);
     }
+    
+    .opinion {
+        display: block;
+    }
+    
+    .client-box {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .client-box .client-pic, .client-box .client-pic1 {
+        margin: 0;
+    }
+    
+    .client-box .client-details {
+        text-align: center;
+    }
+    
+    .client-box .client-name {
+        font-size: 0.9em
+    }
+    
+    .client-box .client-position {
+        font-size: 0.8em
+    }
+    
+    .social-link img{
+        max-width: 50%;
+    }
+    
+    
+    
+    
     
     
     
@@ -1375,3 +1445,11 @@ ol {
     }
     
 }
+
+@media screen and (min-width: 748px) and (max-width: 962px){
+    
+    .social-group .social {
+        width: 10em; 
+    }
+    
+} 
