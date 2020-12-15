@@ -388,13 +388,17 @@ ol {
     font-family: 'Open Sans', sans-serif;
 }
 
-.portafolio {
-    height: 105vh;
+                                                                        /*Aqui comienzan los estilos del portafolio*/
 
+.portafolio {
+    height: 100vh;
+}
+
+.portafolio-start {
+    margin-bottom: 1em;
 }
 
 .portafolio .portafolio-start {
-    height: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -410,30 +414,35 @@ ol {
     color: #838287;
     font-family: 'Open Sans', sans-serif;
     line-height: 180%;
-    margin-top: 15px;
+    margin-top: px;
 }
 
 .portafolio-grupo {
     height: 85%;
     display: flex;
+    margin-bottom: 5em;
+    
 }
 
 .portafolio-columna {
     width: 33.3%;
+    
 }
 
 .proyecto-vertical {
-    height: 65%;
+    height: 70%;
     width: 90%;
-    margin-left: 30px;
+    margin: auto;
     margin-bottom: 15px;
+    border-radius: 2.5%;
 }
 
 .proyecto-horizontal {
-    height: 35%;
+    height: 40%;
     width: 90%;
-    margin-left: 30px;
+    margin:auto;
     margin-bottom: 15px;
+    border-radius: 2.5%;
 }
 
 .proyecto-vertical.proyecto0 {
@@ -494,11 +503,13 @@ ol {
     font-family: 'Cabin', sans-serif;
     font-size: 30px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .proyecto-texto .proyecto-detail {
     font-family: 'Open Sans', sans-serif;
     line-height: 180%;
+    text-align: center;
 }
 
 .moreprojects-button-area {
@@ -519,6 +530,8 @@ ol {
     border: 0;
     margin-top: 40px;
 }
+
+                                                                    /*Fin estilos del portafolio*/
 
 .referencias {
     height: 100vh;
@@ -1233,6 +1246,55 @@ ol {
     .servicios .servicios-intro {
         margin: 2em 1em;
     }
+    
+    .portafolio-grupo {
+        display: block;
+    }
+    
+    .portafolio-columna {
+        width: 100%;
+    }
+    
+    .proyecto-vertical, .proyecto-horizontal {
+        
+        height: 6em;        
+    }
+    
+    .portafolio-start .portafolio-title {
+        font-size: 2em;
+        margin-left: 0;
+    }
+    
+    .portafolio-start .portafolio-intro {
+    font-size: 0.8em;
+    text-align: center;
+    }
+    
+    .portafolio-start {
+    margin-bottom: 0.5em;
+    }
+    
+    .proyecto-texto {
+        width: 100%;
+        
+    }
+    
+    .proyecto-texto .proyecto-name {
+        font-size: 1em;
+        margin-bottom: 0.2em
+    }
+    
+    .proyecto-texto .proyecto-detail {
+        font-size: 0.8em;
+        line-height: 1.2em;
+    }
+    
+    .proyecto-vertical.proyecto0 .proyecto-texto, .proyecto-horizontal.proyecto1 .proyecto-texto, .proyecto-horizontal.proyecto2 .proyecto-texto, .proyecto-vertical.proyecto3 .proyecto-texto, .proyecto-vertical.proyecto4 .proyecto-texto, .proyecto-horizontal.proyecto5 .proyecto-texto {
+        color: white;
+        background-color: rgba(131, 130, 135, 0.45);
+    }
+    
+    
     
 }
 
